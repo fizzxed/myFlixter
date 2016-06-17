@@ -13,6 +13,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         movie = (Movie) getIntent().getSerializableExtra("movie");
+
+        getSupportActionBar().hide(); // Hide ActionBar
+
         // TextView tvTest = (TextView) findViewById(R.id.tvTest);
         // tvTest.setText(movie.getOriginalTitle());
     }

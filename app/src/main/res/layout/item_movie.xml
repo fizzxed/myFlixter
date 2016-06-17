@@ -38,6 +38,7 @@
         android:layout_toRightOf="@+id/ivMovieImage"
         android:layout_toEndOf="@+id/ivMovieImage"
         android:ellipsize="end"
-        android:maxLines="13"
+        android:maxLines="10"
         android:textColor="#797979" />
+
 </RelativeLayout>

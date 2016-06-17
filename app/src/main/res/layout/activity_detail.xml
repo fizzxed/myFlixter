@@ -8,12 +8,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+    android:background="#1e1e1e">
 
     <ImageView
         android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_heightPercent="45%"
-        android:layout_height="100dp"
         android:id="@+id/ivMovieImage"
         android:src="@mipmap/ic_launcher"
         android:layout_alignParentTop="true"
@@ -26,7 +27,29 @@
         android:text="Captain America: Civil War"
         android:id="@+id/tvTitle"
         android:textSize="26sp"
-        android:layout_alignParentTop="true"
-        android:layout_below="@id/ivMovieImage"
-        android:textColor="#000000" />
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_alignBottom="@id/ivMovieImage"
+        android:textColor="#ffffff"
+        android:paddingBottom="12dp" />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/ivMovieImage"
+        android:numStars="10"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:stepSize="0.1"
+        android:rating="7"
+        android:scaleX="1.5"
+        android:scaleY="1.5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:paddingTop="5dp"
+        android:text="Test etst test test tset test"
+        android:textColor="#797979" />
+
 </android.support.percent.PercentRelativeLayout>
