@@ -20,6 +20,18 @@ public class Movie implements Serializable {
     double popularity;
     double videoURL;
 
+    public String getId() {
+        return id;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public double getPopularity() {
+        return popularity;
+    }
+
     public String getPosterPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s", posterPath);
     }
