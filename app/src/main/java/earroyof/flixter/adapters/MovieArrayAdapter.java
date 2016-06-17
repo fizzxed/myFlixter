@@ -15,6 +15,7 @@ import java.util.List;
 
 import earroyof.flixter.R;
 import earroyof.flixter.models.Movie;
+import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
 
 /**
  * Created by earroyof on 6/15/16.
@@ -82,7 +83,8 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
         } else {
             deltaPoster = movie.getPosterPath();
         }
-        Picasso.with(getContext()).load(deltaPoster).fit().placeholder(R.drawable.movie_placeholder).into(viewHolder.poster);
+        Picasso.with(getContext()).load(deltaPoster).transform(new RoundedCornersTransformation(15, 15))
+                .fit().placeholder(R.drawable.movie_placeholder).into(viewHolder.poster);
 
 
         // return the view

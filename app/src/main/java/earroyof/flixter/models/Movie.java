@@ -25,7 +25,7 @@ public class Movie implements Serializable {
     }
 
     public String getOriginalTitle() {
-        return originalTitle + " id: " + id;
+        return originalTitle;
     }
 
     public String getOverview() {
